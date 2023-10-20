@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Plug S</title>
+</head>
+
+<body style="background-color:black; color:white;">
+
+<h1 style="text-align:center; color:red;">Status infos Plug S</h1>
+<div class="content" style="text-align: center">
+<br><br>
+<img src="play.svg" alt="button">
+<div>Adresse IP : <span id="ip"></span></div>
+<div>Uptime : <span id="uptime"></span></div>
+<div>Température : <span id="temperature"></span></div>
+<div>SSID : <span id="ssid"></span></div>
+</div>
+
+</body>
+
+<script>
+    // document.addEventListener("DOMContentLoaded", async function() {
+    //     let requestOptions = {
+    //         method: 'GET',
+    //         redirect: 'follow'
+    //     };
+    //     fetch("http://192.168.1.100/status", requestOptions)
+    //         .then(response => response.json())
+    //         .then(response => {
+    //             document.getElementById("ip").innerHTML = response.wifi_sta.ip;
+    //             document.getElementById("uptime").innerHTML = response.uptime;
+    //             document.getElementById("temperature").innerHTML = response.temperature;
+    //             document.getElementById("ssid").innerHTML = response.wifi_sta.ssid;
+    //         })
+    //         .catch(error => console.log('error', error));
+    // });
+    //
+    // const requestOptions = {
+    //     method: "POST",
+    //     headers: {
+    //         "Content-Type": "application/json"
+    //     }
+    // };
+    //
+    // fetch("http://192.168.1.100/relay/1/off", requestOptions)
+    //     .then(response => response.json())
+    //     .then(result => {
+    //         if (result.success) {
+    //             // La prise est éteinte
+    //         } else {
+    //             // Une erreur s'est produite
+    //         }
+    //     })
+    //     .catch(error => console.log('error', error));
+
+
+</script>
+
+</html>
+
