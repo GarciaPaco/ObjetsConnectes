@@ -12,7 +12,8 @@
 <h1 style="text-align:center; color:red;">Status infos Plug S</h1>
 <div class="content" style="text-align: center">
 <br><br>
-<img src="play.svg" alt="button">
+<img id="playButton" src="play.svg" alt="button">
+<img id="pauseButton" src="stop.svg" alt="button" style="display: none";>
 <div>Adresse IP : <span id="ip"></span></div>
 <div>Uptime : <span id="uptime"></span></div>
 <div>Température : <span id="temperature"></span></div>
@@ -22,6 +23,20 @@
 </body>
 
 <script>
+    const playButton = document.querySelector("#playButton");
+    const pauseButton = document.querySelector("#pauseButton");
+
+    playButton.addEventListener("click", () => {
+        playButton.style.display = "none";
+        pauseButton.style.display = "block";
+    });
+
+    pauseButton.addEventListener("click", () => {
+        playButton.style.display = "block";
+        pauseButton.style.display = "none";
+    });
+
+
     // document.addEventListener("DOMContentLoaded", async function() {
     //     let requestOptions = {
     //         method: 'GET',
